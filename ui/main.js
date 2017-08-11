@@ -26,6 +26,25 @@ button.onclick= function(){
 
 }; 
     
+    //submit name
+    var nameInput= document.getElementById("name");
+    var name= nameInput.value;
+    var submit = document.getElementById("submit_btn");
+    submit.onclick = function(){
+        //make a request in the serverand send the name
+        
+        //capture a list of name amd render it as a list
+        var names=['name1','name2','name3','name4'];
+        var list='';
+        for(var i=0; i<name.length;i++){
+            list+= '<li>' +name[i] +'<li>';
+        }
+        var ul= document.getElementById('namelist');
+        ul.innerHTML = list;
+        
+    };
+    
+    
     
     
     
