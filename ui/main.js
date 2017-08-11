@@ -4,11 +4,7 @@ var button= document.getElementById('counter');
 button.onclick= function(){
     // create a request object
     var request= new XMLHttpRequest();
-    
-    
-    
-    
-    // capture the response and store it in the variable
+     // capture the response and store it in the variable
     request.onreadystatechange = function(){
         if(request.readyState === XMLHttpRequest.DONE){
             //take some action
@@ -25,7 +21,7 @@ button.onclick= function(){
     
     //make the request
     
-    request.open('GET', 'http://http://simran2015in2015.imad.hasura-app.io/counter', true);
+    request.open('GET', 'http://simran2015in2015.imad.hasura-app.io/counter', true);
     request.send(null);
 
 }; 
